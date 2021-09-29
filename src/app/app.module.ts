@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { MainWebsiteBodyComponent } from './main-website-body/main-website-body.component';
 import { ButtonBarComponent } from './button-bar/button-bar.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { SignUpFormComponent } from './sign-up-form/sign-up-form.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MainWebsiteBodyComponent,
-    ButtonBarComponent
+    ButtonBarComponent,
+    SignUpFormComponent
   ],
   imports: [
     BrowserModule,
