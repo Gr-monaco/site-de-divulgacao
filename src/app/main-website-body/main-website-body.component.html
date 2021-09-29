@@ -1,0 +1,4 @@
+<!-- <p>main-website-body works!</p>
+<p>{{cadastroVisivel}}</p> -->
+<button-bar (editedEmitter)="updateValue($event)"></button-bar><br>
+<sign-up-form *ngIf='cadastroVisivel' (editedEmitter)="updateValue($event)"></sign-up-form>
