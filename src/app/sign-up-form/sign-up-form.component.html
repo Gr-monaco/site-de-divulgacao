@@ -12,4 +12,4 @@
 <select name="linguagens" id="ling" [(ngModel)]="userProfile.preferencia">
    <option [value]="preference" *ngFor="let preference of options">{{preference}}</option>
 </select><br>
-<button (click)="functionToCallFormOpen(); updateProfile($event)" >Enviar</button>
+<button (click)="functionToCallFormOpen(); updateProfile($event); functionToCallTableOpen()" >Enviar</button>

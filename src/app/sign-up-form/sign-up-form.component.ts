@@ -26,7 +26,7 @@ export class SignUpFormComponent implements OnInit {
   @Output() emitterTableOpen = new EventEmitter<boolean>();
 
   private form_open : boolean = false;
-  private tabela : boolean = true;
+  private table_open : boolean = true;
   
   constructor(private userProfileService: UserProfileService) { }
 
@@ -35,7 +35,7 @@ export class SignUpFormComponent implements OnInit {
   }
 
   functionToCallTableOpen(){
-    this.emitterTableOpen.emit(this.form_open);
+    this.emitterTableOpen.emit(this.table_open);
 
   }
 
