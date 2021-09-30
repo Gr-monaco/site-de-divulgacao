@@ -7,14 +7,19 @@ import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 })
 export class ButtonBarComponent implements OnInit {
 
-  @Output() emitterFormOpen = new EventEmitter<boolean>();
-  
+  @Output() emitterFormOpen = new EventEmitter<boolean>(); //mudar open para State é melhor?
+  @Output() emitterTableState = new EventEmitter<boolean>();
+
   private variableToPass : boolean = true;
 
   constructor() { }
 
   functionToCall() {
     this.emitterFormOpen.emit(this.variableToPass);
+  }
+
+  functionToCloseTableList(){
+    this.emitterTableState.emit(false);
   }
 
   ngOnInit(): void {

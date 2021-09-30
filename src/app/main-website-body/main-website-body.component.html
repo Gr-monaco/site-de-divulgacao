@@ -1,5 +1,5 @@
 <!-- <p>main-website-body works!</p>
 <p>{{cadastroVisivel}}</p> -->
-<button-bar (emitterFormOpen)="updateValueCadastro($event)"></button-bar><br>
+<button-bar (emitterFormOpen)="updateValueCadastro($event)" (emitterTableState)="updateValueTabela($event)"></button-bar><br>
 <sign-up-form *ngIf='cadastroVisivel' (emitterFormOpen)="updateValueCadastro($event)" (emitterTableOpen)="updateValueTabela($event)"></sign-up-form>
 <table-list *ngIf='tabelaVisivel'></table-list>
