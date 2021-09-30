@@ -7,13 +7,15 @@ import { MainWebsiteBodyComponent } from './main-website-body/main-website-body.
 import { ButtonBarComponent } from './button-bar/button-bar.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SignUpFormComponent } from './sign-up-form/sign-up-form.component';
+import { TableListComponent } from './table-list/table-list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MainWebsiteBodyComponent,
     ButtonBarComponent,
-    SignUpFormComponent
+    SignUpFormComponent,
+    TableListComponent
   ],
   imports: [
     BrowserModule,
