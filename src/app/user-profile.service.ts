@@ -5,7 +5,7 @@ export interface UserProfile {
   email: string
   telefone: string
   endereco: string
-  idade: string
+  idade: number
   preferencia: string
 }
 
@@ -13,11 +13,11 @@ export interface UserProfile {
   providedIn: 'root'
 })
 export class UserProfileService {
-  nome: string = 'Teste';
-  email:string = 'email';
-  telefone: string = '2345meia78';
-  endereco: string = 'endereco';
-  idade: string = '321'
+  nome: string = '';
+  email:string = '';
+  telefone: string = '';
+  endereco: string = '';
+  idade: number = 0
   preferencia: string ='C#'
 
   constructor() { }
