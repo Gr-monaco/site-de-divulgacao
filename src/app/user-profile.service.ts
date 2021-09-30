@@ -26,6 +26,8 @@ export class UserProfileService {
     this.nome = userProfile.name;
     this.email = userProfile.email;
     this.telefone = userProfile.telefone;
+    this.endereco = userProfile.endereco;
+    this.idade = userProfile.idade;
     this.preferencia = userProfile.preferencia;
   }
 }
