@@ -16,7 +16,7 @@
             <td [innerHtml]="userProfileService.telefone"></td>
             <td [innerHtml]="userProfileService.endereco"></td>
             <td [innerHtml]="userProfileService.idade"></td>
-            <td [innerHtml]="userProfileService.preferencia"></td>
+            <td [innerHtml] ="userProfileService.preferencia" [ngClass] = "getClassOfUserPref(userProfileService)"></td>
         </tr>
     </tbody>
 </table>
