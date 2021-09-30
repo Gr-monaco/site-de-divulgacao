@@ -1,15 +1,15 @@
 <label>Nome</label>
-<input type="text"><br>
+<input type="text" [(ngModel)]="userProfile.name"><br>
 <label>E-mail</label>
-<input type="text"><br>
+<input type="text"[(ngModel)]="userProfile.email"><br>
 <label>Telefone</label>
-<input type="text"><br>
+<input type="text" [(ngModel)]="userProfile.telefone"><br>
 <label>Endereço</label>
-<input type="text"><br>
+<input type="text" [(ngModel)]="userProfile.endereco"><br>
 <label>Idade</label>
-<input type="text"><br>
+<input type="text" [(ngModel)]="userProfile.idade"><br>
 <label>Preferencia</label>
-<select name="linguagens" id="ling">
+<select name="linguagens" id="ling" [(ngModel)]="userProfile.preferencia">
     <option value="C#">C#</option>
     <option value="C++">C++</option>
     <option value="C">C</option>
@@ -22,4 +22,4 @@
     <option value="Lisp">Lisp</option>
     <option value="Java">Java</option>
 </select><br>
-<button (click)='functionToCall()' >Enviar</button>
+<button (click)="functionToCallFormOpen(); updateProfile($event)" >Enviar</button>

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { UserProfileService } from '../user-profile.service';
 
 @Component({
   selector: 'table-list',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TableListComponent implements OnInit {
 
-  constructor() { }
+  constructor(public userProfileService : UserProfileService) { }
 
   ngOnInit(): void {
   }

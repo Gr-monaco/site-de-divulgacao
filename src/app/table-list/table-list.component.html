@@ -1,1 +1,19 @@
 <p>table-list works!</p>
+<table>
+    <thead>
+        <tr>
+            <th>Nome</th>
+            <th>Email</th>
+            <th>Telefone</th>
+            <th>Preferencia</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td [innerHtml]="userProfileService.nome"></td>
+            <td [innerHtml]="userProfileService.email"></td>
+            <td [innerHtml]="userProfileService.telefone"></td>
+            <td [innerHtml]="userProfileService.preferencia"></td>
+        </tr>
+    </tbody>
+</table>

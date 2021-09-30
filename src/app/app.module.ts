@@ -8,6 +8,8 @@ import { ButtonBarComponent } from './button-bar/button-bar.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SignUpFormComponent } from './sign-up-form/sign-up-form.component';
 import { TableListComponent } from './table-list/table-list.component';
+import { FormsModule } from '@angular/forms';
+
 
 @NgModule({
   declarations: [
@@ -20,7 +22,8 @@ import { TableListComponent } from './table-list/table-list.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

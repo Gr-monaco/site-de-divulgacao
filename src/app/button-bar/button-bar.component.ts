@@ -7,14 +7,14 @@ import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 })
 export class ButtonBarComponent implements OnInit {
 
-  @Output() editedEmitter = new EventEmitter<boolean>();
+  @Output() emitterFormOpen = new EventEmitter<boolean>();
   
   private variableToPass : boolean = true;
 
   constructor() { }
 
   functionToCall() {
-    this.editedEmitter.emit(this.variableToPass);
+    this.emitterFormOpen.emit(this.variableToPass);
   }
 
   ngOnInit(): void {
