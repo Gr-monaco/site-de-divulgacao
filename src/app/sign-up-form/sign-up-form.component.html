@@ -7,9 +7,9 @@
 <label>Endereço</label>
 <input type="text" [(ngModel)]="userProfile.endereco"><br>
 <label>Idade</label>
-<input type="text" [(ngModel)]="userProfile.idade"><br>
+<input type="number" digitOnly [(ngModel)]="userProfile.idade"><br>
 <label>Preferencia</label>
 <select name="linguagens" id="ling" [(ngModel)]="userProfile.preferencia">
    <option [value]="preference" *ngFor="let preference of options">{{preference}}</option>
 </select><br>
-<button (click)="functionToCallFormOpen(); updateProfile($event); functionToCallTableOpen()" >Enviar</button>
+<button (click)="functionToCallFormOpen(); updateProfile($event); functionToCallTableOpen()" [disabled]='getButtonState()' >Enviar</button>

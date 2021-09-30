@@ -18,7 +18,7 @@ export class SignUpFormComponent implements OnInit {
     email: '',
     telefone: '',
     endereco: '',
-    idade: 0,
+    idade: 19,
     preferencia: ''
   }
   
@@ -43,9 +43,15 @@ export class SignUpFormComponent implements OnInit {
     this.userProfileService.updateData(this.userProfile)
   }
   
-  //getButtonState(){
- //   return {false: this.userProfile.idade as number >= 18}
-  //}
+  getButtonState(): boolean{
+    console.log('aaaa');
+    if (this.userProfile.idade >=18){
+      return false;
+    }
+    else{
+      return true;
+    }
+  }
 
   ngOnInit(): void {
   }
