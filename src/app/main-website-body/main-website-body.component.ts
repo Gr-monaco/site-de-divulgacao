@@ -14,7 +14,7 @@ export class MainWebsiteBodyComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  updateValue(val: boolean) {
+  updateValueCadastro(val: boolean) {
     this.cadastroVisivel = val;
   }
 }
