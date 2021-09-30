@@ -8,6 +8,11 @@ import { UserProfile, UserProfileService } from '../user-profile.service';
 })
 export class SignUpFormComponent implements OnInit {
 
+  options = ['C#','C++','C',
+             'Python','PHP','HTML',
+             'Javascript','Ruby','R',
+             'Lisp','Java']
+
   userProfile : UserProfile = {
     name: '',
     email: '',
